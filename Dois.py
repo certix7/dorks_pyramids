@@ -1,4 +1,3 @@
-
 #!/usr/bin/python3
 # Console colors
 bg ='' # '\033[44m'  # gray
@@ -542,7 +541,17 @@ ascii,ujis,ucs2,tis620,swe7,sjis,macroman,macce,latin7,latin5,latin2,koi8u,koi8r
 
 ?id=2-.1union select
 
---------------------------------------------------------------------------------------------"""
+--------------------------------------------------------------------------------------------
+- Fatal Error Occurred
+--------------------------------------------------------------------------------------------
+NULL,NULL 
+--------------------------------------------------------------------------------------------
+Enumeration In SQL
+--------------------------------------------------------------------------------------------
+google : inurl:php?id= site:your site
+----------------------------------------
+Invalid Request!!!!
+"""
 
 
 
@@ -556,9 +565,17 @@ input("[Pres Enter]")
 
 
 
+charle="""
+%23aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa%0a
+--------------------------------------------------------------------------------------------
+%23aaaaaaaaaaaaaaaaaaaaaa%0a%23aaaaaaaaaaaaaaaaaaaaaa%0a%23aaaaaaaaaaaaaaaaaaaaaa%0a%23aaaaaaaaaaaaaaaaaaaaaa%0a%23aaaaaaaaaaaaaaaaaaaaaa%0a%23aaaaaaaaaaaaaaaaaaaaaa%0a%23aaaaaaaaaaaaaaaaaaaaaa%0a%23aaaaaaaaaaaaaaaaaaaaaa%0a%23aaaaaaaaaaaaaaaaaaaaaa%0a%23aaaaaaaaaaaaaaaaaaaaaa%0a%23aaaaaaaaaaaaaaaaaaaaaa%0a%23aaaaaaaaaaaaaaaaaaaaaa%0a%23aaaaaaaaaaaaaaaaaaaaaa%0a%23aaaaaaaaaaaaaaaaaaaaaa%0a%23aaaaaaaaaaaaaaaaaaaaaa%0a%23aaaaaaaaaaaaaaaaaaaaaa%0a%23aaaaaaaaaaaaaaaaaaaaaa%0a%23aaaaaaaaaaaaaaaaaaaaaa%0a%23aaaaaaaaaaaaaaaaaaaaaa%0a%23aaaaaaaaaaaaaaaaaaaaaa%0a%23aaaaaaaaaaaaaaaaaaaaaa%0a%23aaaaaaaaaaaaaaaaaaaaaa%0a%23aaaaaaaaaaaaaaaaaaaaaa%0a%23aaaaaaaaaaaaaaaaaaaaaa%0a%23aaaaaaaaaaaaaaaaaaaaaa%0a%23aaaaaaaaaaaaaaaaaaaaaa%0a%23aaaaaaaaaaaaaaaaaaaaaa%0a%23aaaaaaaaaaaaaaaaaaaaaa%0a%23aaaaaaaaaaaaaaaaaaaaaa%0a%23aaaaaaaaaaaaaaaaaaaaaa%0a%23aaaaaaaaaaaaaaaaaaaaaa%0a
+--------------------------------------------------------------------------------------------
 
+"""
 
-
+clear()
+print(charle)
+input("[Pres Enter]")
 
 
 
@@ -753,7 +770,16 @@ session_user():Session user
 @@GLOBAL.have_symlink:Check if Symlink Enabled or Disabled
 @@GLOBAL.have_ssl:Check if it have ssl or not
 -------------------------------
+
+
+
+
+
 cf7-database
+
+
+
+
 '''
 
 
