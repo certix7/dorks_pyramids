@@ -11,9 +11,6 @@ C = bg+'\033[36m'  # cyan
 GR = bg+'\033[37m'  # gray
 
 try:
-    from threading import Thread
-    import sqlite3
-    import urllib.parse
     import os,time,sys
     from datetime import datetime
     now = datetime.now()   
